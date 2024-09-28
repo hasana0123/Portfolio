@@ -1,9 +1,19 @@
 html 
     head 
+        link(rel="stylesheet" href="https://use.typekit.net/your-kit-id.css")
+        link(rel="stylesheet" href="../css/main.css")
         title Hasna Portfolio 
     body 
-        include includes/header
-        +header("")
+        #background 
+            include includes/header
+            +header("")
 
-        #indexContents 
-            h1 Hello all!
+            #indexContents
+                #contentsAll 
+                    #leftContents
+                        h1 Hi !
+                        h3 
+                            p I'm Hasana Manandhar, currently studying Bachelors in Computer Engineering at Khwopa College of Engineering.
+                        h5 Contact me at
+                        #socialMedias a b c d
+                    img(src="/images/welcome.png" alt="image")
