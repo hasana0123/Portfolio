@@ -109,3 +109,44 @@ header a:hover {
     /* box-shadow: 0px 2px 50px 5px rgb(51, 50, 50); */
     /* background-color: rgba(249, 201, 150, 0.156); */
 }
+
+#galleryContents
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    color: aliceblue;
+}
+
+#galleryContents #photos
+{
+    display: flex;
+    /* border: 2px solid red; */
+    flex-direction: row;
+    min-height: 50vh;
+    justify-content: space-around;
+    /* width: 90%; */
+}
+
+#galleryContents #photos h1
+{
+    display: flex;
+    /* border: 2px solid red; */
+    flex-direction: row;
+    /* min-height: 60px; */
+    min-width: 50vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(240, 248, 255, 0.303);
+    box-shadow: 0px 2px 20px 3px black;
+    border-radius: 10px;
+    /* width: 90%; */
+}
+
+
+#galleryContents #photos h1:hover
+{
+    background-color: rgba(240, 248, 255, 0.624);
+    box-shadow: 0px 2px 50px 3px black;
+}
