@@ -82,24 +82,67 @@ header a:hover {
     flex-direction: column;
     text-align: center;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     width: 40%;
     min-height: 60vh;
     background-color: rgba(255, 255, 255, 0.444);
-    padding: 20px;
+    padding: 65px;
     box-shadow: 0px 2px 30px 5px rgb(55, 54, 54);
     border-radius: 5px;
 }
 
-#indexContents #leftContents img {
+#indexContents #leftContents .photo img {
     /* border: 2px solid rgb(255, 255, 255); */
     border-radius: 200%;
     background-image: url("../images/bg.jpeg");
     background-size: cover;
-    width: 30%;
+    width: 70%;
     /* align-items: center; */
     /* box-shadow: 0px 2px 50px 5px rgb(51, 50, 50); */
     /* background-color: rgba(249, 201, 150, 0.156); */
+}
+
+#indexContents #leftContents h1{
+    font-family: "Bebas Neue",sans-serif;
+    font-weight: 20px;
+    font-size: 40px;
+}
+
+#indexContents #leftContents h1,h2,h3{
+    color: rgb(56, 55, 50);
+
+}
+
+#indexContents #leftContents #socialMedias 
+{
+    display: flex;
+    /* border: 2px solid green; */
+    width: 50%;
+    justify-content: center;
+}
+
+#indexContents #leftContents #socialMedias #logo
+{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    align-items: center;
+    justify-content: space-around;
+    /* border: 2px solid red; */
+}
+
+#indexContents #leftContents #socialMedias #logo img{
+    width: 30px;
+    height: 40px;
+    background-color: none;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px 1px rgb(75, 72, 72);
+}
+
+#indexContents #leftContents #socialMedias #logo img:hover
+{
+    filter: brightness(0.5);
+    box-shadow: 0px 2px 10px 2px rgb(230, 237, 29);
 }
 
 #galleryContents
