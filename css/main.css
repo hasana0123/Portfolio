@@ -28,6 +28,10 @@ header {
     margin-top: 70px;
     display: flex;
     justify-content: space-evenly;
+    position: sticky;
+    top: 50;
+    left: 50;
+    z-index: 100;
     /* margin-top: 30px; */
     /* border: 2px solid white; */
 }
@@ -51,8 +55,8 @@ header #navBar {
 }
 
 header a:hover {
-    color: rgb(246, 171, 120);
-    border: 2px solid rgb(241, 136, 61);
+    color: rgb(230, 148, 24);
+    border: 2px solid rgb(245, 157, 57);
     border-top: none;
     border-left: none;
     border-right: none;
@@ -136,6 +140,7 @@ header a:hover {
     height: 40px;
     background-color: none;
     border-radius: 10px;
+    filter: contrast(1.9);
     box-shadow: 0px 2px 10px 1px rgb(75, 72, 72);
 }
 
