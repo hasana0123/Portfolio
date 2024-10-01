@@ -223,6 +223,7 @@ header a:hover {
     margin-top: 100px;
     color: white;
     align-items: center;
+    font-family: "Bebas Neue", sans-serif;
 }
 
 #highlightsContents #pictureCollage
@@ -249,3 +250,28 @@ header a:hover {
     background-color: rgba(240, 248, 255, 0.359);
     /* align-items: center; */
 }
+
+#highlightsContents #pictureCollage #secondRow
+{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    border: 2px solid yellow;
+    width: 90%;
+    justify-content: space-evenly;
+}
+
+#highlightsContents #pictureCollage #secondRow h1
+{
+    text-align: center;
+}
+#highlightsContents #pictureCollage #secondRow .c1,
+#highlightsContents #pictureCollage #secondRow .c2,
+#highlightsContents #pictureCollage #secondRow .c3
+{
+    width: 30%;
+    min-height: 50vh;
+    border: 2px solid green;
+}
+
+
