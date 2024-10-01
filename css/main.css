@@ -214,3 +214,38 @@ header a:hover {
     background-color: rgba(240, 248, 255, 0.624);
     box-shadow: 0px 2px 50px 3px black;
 }
+
+#highlightsContents 
+{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    margin-top: 100px;
+    color: white;
+    align-items: center;
+}
+
+#highlightsContents #pictureCollage
+{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid green;
+    width: 95%;
+    align-items: center;
+    /* background-color: rgba(255, 255, 255, 0.205); */
+}
+
+#highlightsContents #pictureCollage #firstRow
+{
+    color: black;
+    width: 70%;
+    border: 2px solid yellow;
+    display: flex;
+    min-height: 40vh;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(240, 248, 255, 0.359);
+    /* align-items: center; */
+}
