@@ -9,11 +9,12 @@ body {
     /* background-image: url(/images/welcome.png); */
     background-image: url("../images/content.jpg");
     background-size: cover;
+    font-family: "Bebas Neue", sans-serif;
 }
 
 #background {
-    position:absolute;
-    top:0;
+    position: absolute;
+    top: 0;
     left: 0;
     width: 100%;
     /* margin-top: none; */
@@ -42,7 +43,6 @@ header a {
     /* width: 50px; */
     /* padding: 5px; */
     font-size: 20px;
-    font-family: "Bebas Neue", sans-serif;
 }
 
 header #navBar {
@@ -106,27 +106,25 @@ header a:hover {
     /* background-color: rgba(249, 201, 150, 0.156); */
 }
 
-#indexContents #leftContents h1{
-    font-family: "Bebas Neue",sans-serif;
+#indexContents #leftContents h1 {
     font-weight: 20px;
     font-size: 40px;
 }
 
-#indexContents #leftContents h1,h2,h3{
+#indexContents #leftContents h1,
+h2,
+h3 {
     color: rgb(56, 55, 50);
-
 }
 
-#indexContents #leftContents #socialMedias 
-{
+#indexContents #leftContents #socialMedias {
     display: flex;
     /* border: 2px solid green; */
     width: 50%;
     justify-content: center;
 }
 
-#indexContents #leftContents #socialMedias #logo
-{
+#indexContents #leftContents #socialMedias #logo {
     display: flex;
     flex-direction: row;
     width: 50%;
@@ -135,7 +133,7 @@ header a:hover {
     /* border: 2px solid red; */
 }
 
-#indexContents #leftContents #socialMedias #logo img{
+#indexContents #leftContents #socialMedias #logo img {
     width: 30px;
     height: 40px;
     background-color: none;
@@ -144,38 +142,34 @@ header a:hover {
     box-shadow: 0px 2px 10px 1px rgb(75, 72, 72);
 }
 
-#indexContents #leftContents #socialMedias #logo img:hover
-{
+#indexContents #leftContents #socialMedias #logo img:hover {
     filter: brightness(0.5);
     box-shadow: 0px 2px 10px 2px rgb(230, 237, 29);
 }
 
-#skillsContents
-{
+#skillsContents {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 200px;
-    font-family:"Bebas Neue",sans-serif ;
 }
 
-#skillsContents #heading{
+#heading {
     color: rgb(204, 196, 196);
     font-size: 60px;
     font-weight: bold;
+    margin-bottom: 30px;
     /* font-weight: 0px; */
     /* font-style: oblique; */
 }
 
-#skillsContents #skillsContainer
-{
+#skillsContents #skillsContainer {
     border: 2px solid red;
     padding: 50px;
     width: 50%;
 }
 
-#galleryContents
-{
+#galleryContents {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -183,8 +177,7 @@ header a:hover {
     color: aliceblue;
 }
 
-#galleryContents #photos
-{
+#galleryContents #photos {
     display: flex;
     /* border: 2px solid red; */
     flex-direction: row;
@@ -193,8 +186,7 @@ header a:hover {
     /* width: 90%; */
 }
 
-#galleryContents #photos h1
-{
+#galleryContents #photos h1 {
     display: flex;
     /* border: 2px solid red; */
     flex-direction: row;
@@ -208,70 +200,147 @@ header a:hover {
     /* width: 90%; */
 }
 
-
-#galleryContents #photos h1:hover
-{
+#galleryContents #photos h1:hover {
     background-color: rgba(240, 248, 255, 0.624);
     box-shadow: 0px 2px 50px 3px black;
 }
 
-#highlightsContents 
-{
+#highlightsContents {
     display: flex;
     flex-direction: column;
     padding: 50px;
     margin-top: 100px;
+    margin-bottom: 100px;
     color: white;
     align-items: center;
-    font-family: "Bebas Neue", sans-serif;
+    /* padding: auto; */
 }
 
-#highlightsContents #pictureCollage
-{
+#highlightsContents #pictureCollage {
+    box-shadow: 0px 2px 20px 2px black;
     display: flex;
     flex-direction: column;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     width: 95%;
     align-items: center;
+    padding: 50px;
     /* background-color: rgba(255, 255, 255, 0.205); */
 }
 
-#highlightsContents #pictureCollage #firstRow
+#highlightsContents #pictureCollage #firstRow,
+#highlightsContents #pictureCollage #secondRow .c1,
+#highlightsContents #pictureCollage #secondRow .c2,
+#highlightsContents #pictureCollage #secondRow .c3,
+#highlightsContents #pictureCollage #thirdRow .thirdphoto1,
+#highlightsContents #pictureCollage #thirdRow .thirdphoto2
 {
-    color: black;
+    box-shadow: 0px 2px 20px 2px black;
+    border-radius: 10px;
+    color: rgba(240, 248, 255, 0);
+}
+
+#highlightsContents #pictureCollage #firstRow:hover,
+#highlightsContents #pictureCollage #secondRow .c1:hover,
+#highlightsContents #pictureCollage #secondRow .c2:hover,
+#highlightsContents #pictureCollage #secondRow .c3:hover,
+#highlightsContents #pictureCollage #thirdRow .thirdphoto1:hover,
+#highlightsContents #pictureCollage #thirdRow .thirdphoto2:hover
+{
+    color: rgb(255, 255, 255);
+    filter: brightness(0.5);
+}
+
+#highlightsContents #pictureCollage #firstRow {
     width: 70%;
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
     display: flex;
-    min-height: 40vh;
+    min-height: 70vh;
     font-size: 30px;
     text-align: center;
     justify-content: center;
     align-items: center;
     background-color: rgba(240, 248, 255, 0.359);
-    /* align-items: center; */
+    background-image: url("/images/Kathcode/3.JPG");
+    background-position: center;
+    background-size: cover;
+    /* background-repeat: none; */
 }
 
-#highlightsContents #pictureCollage #secondRow
-{
+#highlightsContents #pictureCollage #secondRow {
     display: flex;
     flex-direction: row;
     margin-top: 50px;
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
     width: 90%;
     justify-content: space-evenly;
 }
 
-#highlightsContents #pictureCollage #secondRow h1
-{
+#highlightsContents #pictureCollage #secondRow h1 {
     text-align: center;
 }
+
 #highlightsContents #pictureCollage #secondRow .c1,
 #highlightsContents #pictureCollage #secondRow .c2,
-#highlightsContents #pictureCollage #secondRow .c3
-{
+#highlightsContents #pictureCollage #secondRow .c3 {
     width: 30%;
     min-height: 50vh;
-    border: 2px solid green;
+    /* border: 2px solid green; */
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#highlightsContents #pictureCollage #secondRow .c1
+{
+    background-image: url("/images/AWS/1.jpg");
+}
+
+#highlightsContents #pictureCollage #secondRow .c2
+{
+    background-image: url("/images/AWS/2.jpg");
 }
 
 
+#highlightsContents #pictureCollage #secondRow .c3
+{
+    background-image: url("/images/AWS/3.jpg");
+}
+
+#highlightsContents #pictureCollage #thirdRow
+{
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid yellow; */
+    margin-top: 50px;
+    width: 80%;
+    min-height: 50vh;
+    justify-content: space-around;
+}
+
+#highlightsContents #pictureCollage #thirdRow .thirdphoto1,
+#highlightsContents #pictureCollage #thirdRow .thirdphoto2
+{
+    /* justify-content: ; */
+    display: flex;
+    min-height: 50vh;
+    /* border:2px solid green ; */
+    text-align: center;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+}
+
+#highlightsContents #pictureCollage #thirdRow .thirdphoto1
+{
+    width: 55%;
+    background-image: url("/images/Hackademia/1.jpg");
+
+}
+
+#highlightsContents #pictureCollage #thirdRow .thirdphoto2
+{
+    width: 40%;
+    background-image: url("/images/Hackademia/2.jpg");
+}
