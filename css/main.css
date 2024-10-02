@@ -19,10 +19,7 @@ body {
     left: 0;
     width: 99vw;
     /* margin-top: none; */
-    border: 2px solid white;
-    /* background-image: filter; */
-    /* background-size: cover; */
-    /* background-repeat: no-repeat; */
+    /* border: 2px solid white; */
 }
 
 header {
@@ -225,6 +222,7 @@ h3 {
     width: 95%;
     align-items: center;
     padding: 50px;
+
     /* background-color: rgba(255, 255, 255, 0.205); */
 }
 
@@ -261,7 +259,7 @@ h3 {
     justify-content: center;
     align-items: center;
     background-color: rgba(240, 248, 255, 0.359);
-    background-image: url("/images/Kathcode/3.JPG");
+    background-image: url("/images/Winners/1.jpg");
     background-position: center;
     background-size: cover;
     /* background-repeat: none; */
@@ -290,22 +288,24 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-position: center;
+
 }
 
 #highlightsContents #pictureCollage #secondRow .c1
 {
-    background-image: url("/images/AWS/1.jpg");
+    background-image: url("/images/Hackademia/1.jpg");
 }
 
 #highlightsContents #pictureCollage #secondRow .c2
 {
-    background-image: url("/images/AWS/2.jpg");
+    background-image: url("/images/Hult/1.jpg");
 }
 
 
 #highlightsContents #pictureCollage #secondRow .c3
 {
-    background-image: url("/images/AWS/3.jpg");
+    background-image: url("/images/Kathcode/1.JPG");
 }
 
 #highlightsContents #pictureCollage #thirdRow
@@ -336,12 +336,19 @@ h3 {
 #highlightsContents #pictureCollage #thirdRow .thirdphoto1
 {
     width: 55%;
-    background-image: url("/images/Hackademia/1.jpg");
+    background-image: url("/images/Participations/1.jpg");
+    background-position: center;
 
 }
 
 #highlightsContents #pictureCollage #thirdRow .thirdphoto2
 {
     width: 40%;
-    background-image: url("/images/Hackademia/2.jpg");
+    background-image: url("/images/myPresence/1.jpg");
+}
+
+#highlightsContents .slideshow
+{
+    transition: transform 3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    flex-shrink: 0;
 }
