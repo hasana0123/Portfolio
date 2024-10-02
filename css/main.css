@@ -9,6 +9,7 @@ body {
     /* background-image: url(/images/welcome.png); */
     background-image: url("../images/content.jpg");
     background-size: cover;
+    /* background-repeat: no-repeat; */
     font-family: "Bebas Neue", sans-serif;
 }
 
@@ -16,7 +17,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 99vw;
     /* margin-top: none; */
     border: 2px solid white;
     /* background-image: filter; */
