@@ -2,8 +2,19 @@ html
     head 
         link(rel="stylesheet" href="https://use.typekit.net/your-kit-id.css")
         link(rel="stylesheet" href="../css/main.css")
+        link(rel="stylesheet" href="../css/blog.css")
         title Hasna Portfolio 
     body 
         #background 
             include includes/header
             +header("")
+            #Hackademia 
+                .contents 
+                    include includes/bloghead
+                    +bloghead("") 
+                    .blogImage
+                        img(src="/images/Winners/1.jpg" alt="")
+                    .blogtext 
+                        p 
+                            h1 HACKADEMIA 2.0
+                            |Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat fugiat placeat deleniti, reprehenderit inventore ipsa quasi porro nisi exercitationem perferendis aspernatur nemo ab voluptate, cumque labore. Nisi, dolore. Voluptatem, sed.
