@@ -114,11 +114,7 @@
     border-radius: 3px;
     padding: 5px;
 }
-/* #blogFooter .like:hover,
-#blogFooter .comment:hover,
-#blogFooter .share:hover {
-    background-color: rgba(254, 230, 228, 0.283);
-} */
+
 
 #blogFooter .share
 {
