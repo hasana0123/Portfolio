@@ -38,7 +38,7 @@ const highlightsSecondC2images = [
     "/images/Kathcode/3.JPG",
     "/images/Kathcode/4.JPG",
     "/images/Kathcode/5.JPG",
-    "/images/Kathcode/IMG_4054.JPG",
+    "/images/Kathcode/2.JPG",
 ];
 
 const highlightsSecondC3images = [
