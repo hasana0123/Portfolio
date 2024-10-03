@@ -1,5 +1,4 @@
-#Hackademia
-{
+#Hackademia {
     /* border: 2px solid red;  */
     display: flex;
     justify-content: center;
@@ -7,23 +6,20 @@
     margin-bottom: 100px;
 }
 
-.contents
-{
+.contents {
     width: 35%;
     padding: 30px;
     justify-content: space-evenly;
-    align-items: center; 
+    align-items: center;
     /* border: 2px solid red; */
     display: flex;
-    flex-direction: column;  
+    flex-direction: column;
     min-height: 50vh;
     background-color: rgba(240, 248, 255, 0.529);
     border-radius: 10px;
     box-shadow: 0px 2px 20px 2px black;
-    
 }
-#profileSection
-{
+#profileSection {
     display: flex;
     flex-direction: row;
     /* border: 2px solid green; */
@@ -32,48 +28,42 @@
     justify-content: flex-start;
 }
 
-#profileSection #profileImage img
-{
+#profileSection #profileImage img {
     width: 70px;
     height: 75px;
     border-radius: 100%;
+    border: 2px solid white;
 }
-#profileSection #profileName
-{
+#profileSection #profileName {
     display: flex;
     flex-direction: column;
-    justify-content:end ;
+    justify-content: end;
     align-items: start;
     /* border: 2px solid red; */
     height: 80px;
     padding-left: 10px;
 }
-#profileSection #profileName h2
-{
+#profileSection #profileName h2 {
     /* border: 2px solid red;   */
     font-size: 15px;
     font-weight: normal;
 }
 
-#profileSection #profileName a
-{
+#profileSection #profileName a {
     text-decoration: none;
     font-size: 25px;
     color: rgb(47, 44, 44);
     /* padding: 20px; */
     /* border: 2px solid red; */
 }
-#profileSection #profileImage img:hover
-{
+#profileSection #profileImage img:hover {
     filter: brightness(0.6);
 }
-#profileSection #profileName a:hover
-{
+#profileSection #profileName a:hover {
     color: aliceblue;
 }
 
-#Hackademia .contents .blogImage
-{
+#Hackademia .contents .blogImage {
     /* border: 2px solid red; */
     display: flex;
     align-items: center;
@@ -81,13 +71,56 @@
     padding: 20px;
 }
 
-#Hackademia .contents .blogImage img
-{
-    width: 95%
+#Hackademia .contents .blogImage img {
+    width: 95%;
 }
 
-#Hackademia .contents .blogtext
-{
-    border: 2px solid red;
+#Hackademia .contents .blogtext {
+    /* border: 2px solid red; */
     width: 90%;
+}
+
+#blogFooter {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    border: 2px solid  rgba(185, 178, 178, 0.5);
+    width: 90%;
+    justify-content: space-around;
+    border-right: none;
+    border-left: none;
+    /* padding: 10px; */
+}
+
+#blogFooter img {
+    width: 40px;
+    /* border: 2px solid red; */
+}
+
+#blogFooter img:hover{
+    filter: contrast(0.3);
+}
+#blogFooter .like,
+#blogFooter .comment,
+#blogFooter .share {
+    /* border: 3px solid rgba(112, 102, 102, 0.5); */
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    padding: 5px;
+}
+/* #blogFooter .like:hover,
+#blogFooter .comment:hover,
+#blogFooter .share:hover {
+    background-color: rgba(254, 230, 228, 0.283);
+} */
+
+#blogFooter .share
+{
+    border-right: none;
 }
