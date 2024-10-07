@@ -1,8 +1,15 @@
 mixin blogfoot(active)
     #blogFooter 
         .like 
-            img(src="/images/heart.png", alt="")
+            button(onclick="likePost()")
+                img(src="/images/heart.png" alt="")
+            span#like-count 0 Likes
+
         .comment 
-            img(src="/images/comment.png", alt="")
+            button(onclick="comment()")
+                img(src="/images/comment.png" alt="")
+            span#comment-count 0 Comments
         .share 
-            img(src="/images/share.png", alt="")
+            button(onclick="share()")
+                img(src="/images/share.png" alt="")
+            span#share-count 0 Shares
