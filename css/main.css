@@ -240,12 +240,19 @@ h3 {
 #highlightsContents #pictureCollage #thirdRow .wrapper .thirdphoto1:hover,
 #highlightsContents #pictureCollage #thirdRow .wrapper .thirdphoto2:hover
 {
-    color: rgb(255, 255, 255);
     filter: brightness(0.5);
+    color: rgb(255, 255, 255);
     /* display: flex;
     text-align: center;
     align-items: center;
     justify-content: center; */
+}
+#highlightsContents #pictureCollage #secondRow .wrapper .c1:hover a,
+#highlightsContents #pictureCollage #secondRow .wrapper .c2:hover a,
+#highlightsContents #pictureCollage #secondRow .wrapper .c3:hover a
+{
+    color: rgb(255, 255, 255);
+
 }
 
 #highlightsContents #pictureCollage #firstRow  .wrapper{
@@ -281,7 +288,10 @@ h3 {
     justify-content: space-evenly;
 }
 
-#highlightsContents #pictureCollage #secondRow .wrapper h1 {
+#highlightsContents #pictureCollage #secondRow .wrapper a {
+    text-decoration: none;
+    font-size: 30px;
+    color: rgba(240, 248, 255, 0);
     text-align: center;
 }
 
@@ -357,7 +367,41 @@ h3 {
     background-image: url("/images/myPresence/1.jpg");
 }
 
-#highlightsContents .wrapper .slideshow
+/* #highlightsContents .wrapper .slideshow
 {
     /* transform: translateX(-100px); */
+/* } */ 
+#background #button
+{
+    /* width: 100%; */
+    /* border: 2px dotted red; */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    /* padding: 30px; */
+}
+
+#background #button .topButton:hover
+{
+    /* padding: 30px; */
+    /* background-color: aqua;
+     */
+
+    border: 2px dotted rgb(255, 255, 255);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    
+}
+
+#background #button a
+{
+    /* display: flex;
+       justify-content: center; */
+       text-decoration: none;
+       font-size: 30px;
+       color: aliceblue;
+}
+#background #button a:hover{
+    color: rgb(247, 143, 23);
 }

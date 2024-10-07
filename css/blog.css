@@ -1,4 +1,4 @@
-#Hackademia {
+#Hackademia,#Kathcode,#Hultprize {
     /* border: 2px solid red;  */
     display: flex;
     justify-content: center;
@@ -63,7 +63,7 @@
     color: aliceblue;
 }
 
-#Hackademia .contents .blogImage {
+.contents .blogImage {
     /* border: 2px solid red; */
     display: flex;
     align-items: center;
@@ -71,11 +71,11 @@
     padding: 20px;
 }
 
-#Hackademia .contents .blogImage img {
+.contents .blogImage img {
     width: 95%;
 }
 
-#Hackademia .contents .blogtext {
+.contents .blogtext {
     /* border: 2px solid red; */
     width: 90%;
 }
