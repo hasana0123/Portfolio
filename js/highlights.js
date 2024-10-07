@@ -1,6 +1,7 @@
 const highlightsContainer = document.getElementById("highlightsContents");
 
-const FirstSlideShow = highlightsContainer.querySelector("#firstRow");
+const FirstSlideShows = highlightsContainer.querySelector("#firstRow");
+const FirstSlideShow = FirstSlideShows.querySelector(".wrapper");
 const SecondSlideShow = highlightsContainer.querySelector("#secondRow");
 const secondC1 = SecondSlideShow.querySelector(".c1");
 const secondC2 = SecondSlideShow.querySelector(".c2");
@@ -78,6 +79,14 @@ let currentImageIndex5 = 0;
 let currentImageIndex6 = 0;
 let currentIndex = 0;
 
+function triggerSlide(element) {
+    element.classList.remove("animate-slide");
+
+    setTimeout(() => {
+        element.classList.add("animate-slide");
+    }, 20);
+}
+
 function slideShow() {
     FirstSlideShow.style.backgroundImage = `url('${highlightsFirstImages[currentImageIndex1]}')`;
     currentImageIndex1 =
@@ -101,13 +110,16 @@ function slideShow() {
 
     thirdC2.style.backgroundImage = `url('${highlightsThirdC2images[currentImageIndex6]}')`;
     currentImageIndex6 =
-        (currentImageIndex6 + 1) % (highlightsThirdC2images.length);
-
-    slideshowWrapper.style.transform = `translateX(-${currentIndex * 100}%)`;
-    currentIndex = (currentIndex + 1) % slideshowWrapper.length;
+        (currentImageIndex6 + 1) % highlightsThirdC2images.length;
+        
+    slideshowWrapper.forEach((wrapper) => {
+        triggerSlide(wrapper); // Trigger the slide animation
+    });
 }
-console.log(highlightsThirdC1images.length + 1);
+// console.log(highlightsThirdC1images.length + 1);
 
 setInterval(slideShow, 3000);
 
 slideShow();
+
+
