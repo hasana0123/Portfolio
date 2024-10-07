@@ -3,6 +3,15 @@
     src: url("path/to/bebas-neue.woff2") format("woff2");
 }
 
+.Active
+{
+    border: 2px solid orange;
+    color: orange;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
 body {
     background-image: url("../images/content.jpg");
     background-size: cover;
