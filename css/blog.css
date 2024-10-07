@@ -37,13 +37,13 @@
 #profileSection #profileName {
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content:space-around;
     align-items: start;
     /* border: 2px solid red; */
     height: 80px;
     padding-left: 10px;
 }
-#profileSection #profileName h2 {
+#profileSection #profileName span {
     /* border: 2px solid red;   */
     font-size: 15px;
     font-weight: normal;
