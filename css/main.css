@@ -234,18 +234,22 @@ h3 {
 }
 
 #highlightsContents #pictureCollage #firstRow:hover,
-#highlightsContents #pictureCollage #secondRow .c1:hover,
-#highlightsContents #pictureCollage #secondRow .c2:hover,
-#highlightsContents #pictureCollage #secondRow .c3:hover,
-#highlightsContents #pictureCollage #thirdRow .thirdphoto1:hover,
-#highlightsContents #pictureCollage #thirdRow .thirdphoto2:hover
+#highlightsContents #pictureCollage #secondRow .wrapper .c1:hover,
+#highlightsContents #pictureCollage #secondRow .wrapper .c2:hover,
+#highlightsContents #pictureCollage #secondRow .wrapper .c3:hover,
+#highlightsContents #pictureCollage #thirdRow .wrapper .thirdphoto1:hover,
+#highlightsContents #pictureCollage #thirdRow .wrapper .thirdphoto2:hover
 {
     color: rgb(255, 255, 255);
     filter: brightness(0.5);
+    /* display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center; */
 }
 
-#highlightsContents #pictureCollage #firstRow {
-    width: 70%;
+#highlightsContents #pictureCollage #firstRow  .wrapper{
+    width: 100%;
     /* border: 2px solid yellow; */
     display: flex;
     min-height: 70vh;
@@ -259,23 +263,31 @@ h3 {
     background-size: cover;
     /* background-repeat: none; */
 }
+#highlightsContents #pictureCollage #firstRow {
+    width: 70%;
+}
+#highlightsContents #pictureCollage #secondRow 
+{
+    /* border: 2px solid red; */
+    width: 90%;
+}
 
-#highlightsContents #pictureCollage #secondRow {
+#highlightsContents #pictureCollage #secondRow .wrapper {
     display: flex;
     flex-direction: row;
     margin-top: 50px;
     /* border: 2px solid yellow; */
-    width: 90%;
+    width: 100%;
     justify-content: space-evenly;
 }
 
-#highlightsContents #pictureCollage #secondRow h1 {
+#highlightsContents #pictureCollage #secondRow .wrapper h1 {
     text-align: center;
 }
 
-#highlightsContents #pictureCollage #secondRow .c1,
-#highlightsContents #pictureCollage #secondRow .c2,
-#highlightsContents #pictureCollage #secondRow .c3 {
+#highlightsContents #pictureCollage #secondRow .wrapper .c1,
+#highlightsContents #pictureCollage #secondRow .wrapper .c2,
+#highlightsContents #pictureCollage #secondRow .wrapper .c3 {
     width: 30%;
     min-height: 50vh;
     /* border: 2px solid green; */
@@ -287,35 +299,38 @@ h3 {
 
 }
 
-#highlightsContents #pictureCollage #secondRow .c1
+#highlightsContents #pictureCollage #secondRow .wrapper .c1
 {
     background-image: url("/images/Hackademia/1.jpg");
 }
 
-#highlightsContents #pictureCollage #secondRow .c2
+#highlightsContents #pictureCollage #secondRow .wrapper .c2
 {
     background-image: url("/images/Hult/1.jpg");
 }
 
 
-#highlightsContents #pictureCollage #secondRow .c3
+#highlightsContents #pictureCollage #secondRow .wrapper .c3
 {
     background-image: url("/images/Kathcode/1.JPG");
 }
-
 #highlightsContents #pictureCollage #thirdRow
+{
+    width: 80%;
+}
+#highlightsContents #pictureCollage #thirdRow .wrapper
 {
     display: flex;
     flex-direction: row;
     /* border: 2px solid yellow; */
     margin-top: 50px;
-    width: 80%;
+    width: 100%;
     min-height: 50vh;
     justify-content: space-around;
 }
 
-#highlightsContents #pictureCollage #thirdRow .thirdphoto1,
-#highlightsContents #pictureCollage #thirdRow .thirdphoto2
+#highlightsContents #pictureCollage #thirdRow .wrapper .thirdphoto1,
+#highlightsContents #pictureCollage #thirdRow .wrapper .thirdphoto2
 {
     /* justify-content: ; */
     display: flex;
@@ -328,7 +343,7 @@ h3 {
     background-size: cover;
 }
 
-#highlightsContents #pictureCollage #thirdRow .thirdphoto1
+#highlightsContents #pictureCollage #thirdRow .wrapper .thirdphoto1
 {
     width: 55%;
     background-image: url("/images/Participations/1.jpg");
@@ -336,14 +351,13 @@ h3 {
 
 }
 
-#highlightsContents #pictureCollage #thirdRow .thirdphoto2
+#highlightsContents #pictureCollage #thirdRow .wrapper .thirdphoto2
 {
     width: 40%;
     background-image: url("/images/myPresence/1.jpg");
 }
 
-#highlightsContents .slideshow
+#highlightsContents .wrapper .slideshow
 {
-    transition: transform 3s cubic-bezier(0.075, 0.82, 0.165, 1);
-    flex-shrink: 0;
+    /* transform: translateX(-100px); */
 }

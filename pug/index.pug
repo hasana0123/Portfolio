@@ -52,7 +52,7 @@ html
                         Secondary School: NESS - 2019
             #galleryContents 
                 #heading 
-                        |MY GALLERY
+                    |MY GALLERY
                 h1 Hello all!
                 h2 These are the arts I made
 
@@ -60,29 +60,32 @@ html
                     h1 Pictures
                     h1 Pictures
                     h1 Pictures
-                    
+
             #highlightsContents 
                 #heading 
                     |HIGHLIGHTS
                 #pictureCollage 
                     #firstRow
-                        .slideshow Learn More
+                        .wrapper
+                            .slideshow Learn More
 
                     #secondRow
-                        .c1
-                            .slideshow 
-                                h1 Hackademia 2.0 
-                        .c2
-                            .slideshow 
-                                h1 Kathcode 2024
-                        .c3
-                            .slideshow 
-                                h1 HultPrize at KhCE 2024
+                        .wrapper
+                            .c1
+                                .slideshow 
+                                    h1 Hackademia 2.0 
+                            .c2
+                                .slideshow 
+                                    h1 Kathcode 2024
+                            .c3
+                                .slideshow 
+                                    h1 HultPrize at KhCE 2024
                     #thirdRow 
-                        .thirdphoto1
-                            .slideshow Learn More 
-                        .thirdphoto2 
-                            .slideshow Learn More
+                        .wrapper
+                            .thirdphoto1
+                                .slideshow Learn More 
+                            .thirdphoto2 
+                                .slideshow Learn More
                 button 
                     a(href="./index.html#indexContents") Go To Top 
-    script(src="/js/main.js")
+    script(src="/js/highlights.js")
