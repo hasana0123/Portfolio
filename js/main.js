@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
 
-        while (--index && window.scrollY + 50 < sections[index].offsetTop) {}
+        while (--index && window.scrollY + 200 < sections[index].offsetTop) {}
 
         navLinks.forEach((link) => link.classList.remove("active"));
         navLinks[index].classList.add("active");
