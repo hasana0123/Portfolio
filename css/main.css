@@ -3,13 +3,26 @@
     src: url("path/to/bebas-neue.woff2") format("woff2");
 }
 
-.Active
+/* .Active
 {
     border: 2px solid orange;
     color: orange;
     border-top: none;
     border-left: none;
     border-right: none;
+} */
+
+#navBar a.active {
+    color: rgb(230, 148, 24) ;
+    /* font-weight: bold; */
+    /* text-decoration: underline; */
+    border: 2px solid orange;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 2px;
+    /* font-size: 30px; */
+    transition: 0.5s ease-in-out;
 }
 
 body {
@@ -20,6 +33,7 @@ body {
     background-position: fixed;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    /* transition: 0.3s ease-in-out; */
 }
 
 #background {
@@ -42,6 +56,8 @@ header {
     top: 0;
     left: 0;
     z-index: 100;
+    transition: 0.3s ease-in-out;
+
     /* margin-top: 30px; */
     /* border: 2px solid white; */
 }
@@ -71,6 +87,8 @@ header a:hover {
     border-right: none;
     /* border-radius: 3px; */
 }
+
+
 #indexContents {
     display: flex;
     /* border: 2px solid red;   */
@@ -378,9 +396,10 @@ h3 {
 }
 
 /* #highlightsContents .wrapper .slideshow
-{
+{ */
     /* transform: translateX(-100px); */
-/* } */ 
+    /* transition: 2s ease-in-out; */
+/* }  */
 #background #button
 {
     /* width: 100%; */
@@ -415,3 +434,4 @@ h3 {
 #background #button a:hover{
     color: rgb(247, 143, 23);
 }
+

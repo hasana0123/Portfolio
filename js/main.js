@@ -3,81 +3,33 @@ const head = document.querySelector("header");
 const navLinks = nav.querySelectorAll("a");
 const sections = document.querySelectorAll("section");
 
-// function updateActiveLink() {
-//     let currentActive = "";
+document.addEventListener("DOMContentLoaded", function () {
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll("#navBar a");
 
-//     sections.forEach((section) => {
-//         const sectionTop = section.offsetTop;
-//         const sectionHeight = section.clientHeight;
-//         if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
-//             currentActive = section.getAttribute("id");
-//             console.log("current Active:",currentActive);
-//         }
-//     });
-// }
-// window.addEventListener("scroll", updateActiveLink);
-// window.addEventListener("load", updateActiveLink);
+    function changeActiveSection() {
+        let index = sections.length;
 
-// let active = "";
-
-// const currentUrl = window.location.href;
-// console.log(currentUrl); // Get the current URL
-
-// if (currentUrl.includes("indexContents")) {
-//     active = "home";
-// } else if (currentUrl.includes("skillsContents")) {
-//     active = "skills";
-// } else if (currentUrl.includes("galleryContents")) {
-//     active = "gallery";
-// } else if (currentUrl.includes("highlightsContents")) {
-//     active = "highlights";
-// } else if (currentUrl.includes("blog")) {
-//     active = "blog";
-// }
-// console.log("active: ", active);
-
-// navLinks.forEach((link) => {
-//     console.log(link.getAttribute("data-active"));
-//     if (link.getAttribute("data-active") === "true") {
-//         // link.classList.add("Active"); // Add the enlarge class
-//         link.style.border = "2px solid orange";
-//     }
-// });
-
-function updateActiveLink() {
-    let currentActive = "";
-
-    sections.forEach((section) => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
-
-        // Check if the section is in the viewport
-        if (
-            window.scrollY >= sectionTop &&
-            window.scrollY < sectionTop + sectionHeight
-        ) {
-            currentActive = section.getAttribute("id");
-            console.log("current Active:", currentActive);
+        if (window.location.pathname.includes("blog.html")) {
+            navLinks.forEach((link) => link.classList.remove("active"));
+            document
+                .querySelector('a[href*="blog.html"]')
+                .classList.add("active");
+            return;
         }
-    });
 
-    // Update the navigation links based on the active section
-    navLinks.forEach((link) => {
-        const href = link.getAttribute("href").split("#")[1]; // Get the ID from the href
-        console.log(href);
-        if (href === currentActive) {
-            link.setAttribute("data-active", "true");
-            link.style.border = "2px solid orange"; // Example style to highlight active link
-        } else {
-            link.setAttribute("data-active", "false");
-            link.style.border = ""; // Reset style
-        }
-    });
-}
+        while (--index && window.scrollY + 50 < sections[index].offsetTop) {}
+
+        navLinks.forEach((link) => link.classList.remove("active"));
+        navLinks[index].classList.add("active");
+    }
+
+    window.addEventListener("scroll", changeActiveSection);
+});
 
 // Attach event listeners
-window.addEventListener("scroll", updateActiveLink);
-window.addEventListener("load", updateActiveLink);
+// window.addEventListener("scroll", updateActiveLink);
+// window.addEventListener("load", updateActiveLink);
 
 window.addEventListener("scroll", () => {
     if (
