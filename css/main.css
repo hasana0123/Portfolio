@@ -3,25 +3,18 @@
     src: url("path/to/bebas-neue.woff2") format("woff2");
 }
 
-/* .Active
-{
-    border: 2px solid orange;
-    color: orange;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-} */
+
 
 #navBar a.active {
     color: rgb(230, 148, 24) ;
     /* font-weight: bold; */
     /* text-decoration: underline; */
+
     border: 2px solid orange;
     border-top: none;
     border-left: none;
     border-right: none;
     padding: 2px;
-    /* font-size: 30px; */
     transition: 0.5s ease-in-out;
 }
 
@@ -184,222 +177,6 @@ h3 {
     /* font-style: oblique; */
 }
 
-#skillsContents #skillsContainer {
-    border: 2px solid red;
-    padding: 50px;
-    width: 50%;
-}
-
-#galleryContents {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* align-items: center; */
-    color: aliceblue;
-}
-
-#galleryContents #photos {
-    display: flex;
-    /* border: 2px solid red; */
-    flex-direction: row;
-    min-height: 50vh;
-    justify-content: space-around;
-    /* width: 90%; */
-}
-
-#galleryContents #photos h1 {
-    display: flex;
-    /* border: 2px solid red; */
-    flex-direction: row;
-    /* min-height: 60px; */
-    min-width: 50vh;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(240, 248, 255, 0.303);
-    box-shadow: 0px 2px 20px 3px black;
-    border-radius: 10px;
-    /* width: 90%; */
-}
-
-#galleryContents #photos h1:hover {
-    background-color: rgba(240, 248, 255, 0.624);
-    box-shadow: 0px 2px 50px 3px black;
-}
-
-#highlightsContents {
-    display: flex;
-    flex-direction: column;
-    padding: 50px;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    color: white;
-    align-items: center;
-    /* padding: auto; */
-}
-
-#highlightsContents #pictureCollage {
-    box-shadow: 0px 2px 20px 2px black;
-    display: flex;
-    flex-direction: column;
-    /* border: 2px solid green; */
-    width: 95%;
-    align-items: center;
-    padding: 50px;
-
-    /* background-color: rgba(255, 255, 255, 0.205); */
-}
-
-#highlightsContents #pictureCollage #firstRow,
-#highlightsContents #pictureCollage #secondRow .c1,
-#highlightsContents #pictureCollage #secondRow .c2,
-#highlightsContents #pictureCollage #secondRow .c3,
-#highlightsContents #pictureCollage #thirdRow .thirdphoto1,
-#highlightsContents #pictureCollage #thirdRow .thirdphoto2
-{
-    box-shadow: 0px 2px 20px 2px black;
-    border-radius: 10px;
-    color: rgba(240, 248, 255, 0);
-}
-
-#highlightsContents #pictureCollage #firstRow:hover,
-#highlightsContents #pictureCollage #secondRow .wrapper .c1:hover,
-#highlightsContents #pictureCollage #secondRow .wrapper .c2:hover,
-#highlightsContents #pictureCollage #secondRow .wrapper .c3:hover,
-#highlightsContents #pictureCollage #thirdRow .wrapper .thirdphoto1:hover,
-#highlightsContents #pictureCollage #thirdRow .wrapper .thirdphoto2:hover
-{
-    filter: brightness(0.5);
-    color: rgb(255, 255, 255);
-    /* display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center; */
-}
-#highlightsContents #pictureCollage #secondRow .wrapper .c1:hover a,
-#highlightsContents #pictureCollage #secondRow .wrapper .c2:hover a,
-#highlightsContents #pictureCollage #secondRow .wrapper .c3:hover a
-{
-    color: rgb(255, 255, 255);
-
-}
-
-#highlightsContents #pictureCollage #firstRow  .wrapper{
-    width: 100%;
-    /* border: 2px solid yellow; */
-    display: flex;
-    min-height: 70vh;
-    font-size: 30px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(240, 248, 255, 0.359);
-    background-image: url("/images/Winners/1.jpg");
-    background-position: center;
-    background-size: cover;
-    /* background-repeat: none; */
-}
-#highlightsContents #pictureCollage #firstRow {
-    width: 70%;
-}
-#highlightsContents #pictureCollage #secondRow 
-{
-    /* border: 2px solid red; */
-    width: 90%;
-}
-
-#highlightsContents #pictureCollage #secondRow .wrapper {
-    display: flex;
-    flex-direction: row;
-    margin-top: 50px;
-    /* border: 2px solid yellow; */
-    width: 100%;
-    justify-content: space-evenly;
-}
-
-#highlightsContents #pictureCollage #secondRow .wrapper a {
-    text-decoration: none;
-    font-size: 30px;
-    color: rgba(240, 248, 255, 0);
-    text-align: center;
-}
-
-#highlightsContents #pictureCollage #secondRow .wrapper .c1,
-#highlightsContents #pictureCollage #secondRow .wrapper .c2,
-#highlightsContents #pictureCollage #secondRow .wrapper .c3 {
-    width: 30%;
-    min-height: 50vh;
-    /* border: 2px solid green; */
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-position: center;
-
-}
-
-#highlightsContents #pictureCollage #secondRow .wrapper .c1
-{
-    background-image: url("/images/Hackademia/1.jpg");
-}
-
-#highlightsContents #pictureCollage #secondRow .wrapper .c2
-{
-    background-image: url("/images/Hult/1.jpg");
-}
-
-
-#highlightsContents #pictureCollage #secondRow .wrapper .c3
-{
-    background-image: url("/images/Kathcode/1.JPG");
-}
-#highlightsContents #pictureCollage #thirdRow
-{
-    width: 80%;
-}
-#highlightsContents #pictureCollage #thirdRow .wrapper
-{
-    display: flex;
-    flex-direction: row;
-    /* border: 2px solid yellow; */
-    margin-top: 50px;
-    width: 100%;
-    min-height: 50vh;
-    justify-content: space-around;
-}
-
-#highlightsContents #pictureCollage #thirdRow .wrapper .thirdphoto1,
-#highlightsContents #pictureCollage #thirdRow .wrapper .thirdphoto2
-{
-    /* justify-content: ; */
-    display: flex;
-    min-height: 50vh;
-    /* border:2px solid green ; */
-    text-align: center;
-    font-size: 30px;
-    align-items: center;
-    justify-content: center;
-    background-size: cover;
-}
-
-#highlightsContents #pictureCollage #thirdRow .wrapper .thirdphoto1
-{
-    width: 55%;
-    background-image: url("/images/Participations/1.jpg");
-    background-position: center;
-
-}
-
-#highlightsContents #pictureCollage #thirdRow .wrapper .thirdphoto2
-{
-    width: 40%;
-    background-image: url("/images/myPresence/1.jpg");
-}
-
-/* #highlightsContents .wrapper .slideshow
-{ */
-    /* transform: translateX(-100px); */
-    /* transition: 2s ease-in-out; */
-/* }  */
 #background #button
 {
     /* width: 100%; */

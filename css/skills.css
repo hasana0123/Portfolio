@@ -4,3 +4,9 @@
     align-items: center;
     margin-top: 200px;
 }
+
+#skillsContents #skillsContainer {
+    border: 2px solid red;
+    padding: 50px;
+    width: 50%;
+}
