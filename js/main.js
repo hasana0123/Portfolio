@@ -38,6 +38,7 @@ window.addEventListener("scroll", () => {
     ) {
         navLinks.forEach((link) => {
             link.style.fontSize = "20px";
+            link.classList.add("newNav");
         });
         head.style.backgroundColor = "";
         head.style.paddingTop = "30px";
