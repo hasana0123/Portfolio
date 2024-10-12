@@ -3,8 +3,6 @@
     src: url("path/to/bebas-neue.woff2") format("woff2");
 }
 
-
-
 #navBar a.active {
     color: rgb(230, 148, 24) ;
     /* font-weight: bold; */
