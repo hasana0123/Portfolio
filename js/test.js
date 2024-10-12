@@ -1,59 +1,59 @@
 document.addEventListener('DOMContentLoaded', function () {
     const container = document.querySelector('.carousel-container');
     const items = document.querySelectorAll('.carousel-item');
-    let itemWidth = items[0].offsetWidth + 10; // Width + margin
-    let visibleItems = 5; // Number of visible items at a time
-    let totalItems = items.length; // Total number of items (7)
-    let moveAmount = itemWidth * visibleItems; // Amount to move for 5 items
+    let itemWidth = items[0].offsetWidth + 10; 
+    let visibleItems = 5;  
+    let totalItems = items.length; 
+    let moveAmount = itemWidth * visibleItems; 
     let autoSlideInterval;
   
-    // Function to move to the next item
+   
     function moveNext() {
       container.style.transition = 'transform 0.5s ease';
       container.style.transform = `translateX(-${moveAmount}px)`;
   
       container.addEventListener('transitionend', function () {
         for (let i = 0; i < visibleItems; i++) {
-          container.append(container.firstElementChild); // Move first elements to the end
+          container.append(container.firstElementChild); 
         }
-        container.style.transition = 'none'; // Disable transition for seamless jump
-        container.style.transform = 'translateX(0)'; // Reset to start
+        container.style.transition = 'none'; 
+        container.style.transform = 'translateX(0)'; 
       }, { once: true });
     }
   
-    // Function to move to the previous item
+   
     function movePrev() {
       for (let i = 0; i < visibleItems; i++) {
-        container.prepend(container.lastElementChild); // Move last elements to the beginning
+        container.prepend(container.lastElementChild); 
       }
-      container.style.transition = 'none'; // Disable transition for seamless jump
-      container.style.transform = `translateX(-${moveAmount}px)`; // Move to the left first
+      container.style.transition = 'none'; 
+      container.style.transform = `translateX(-${moveAmount}px)`; 
   
       setTimeout(() => {
-        container.style.transition = 'transform 0.5s ease'; // Enable smooth transition
-        container.style.transform = 'translateX(0)'; // Reset position
-      }, 10); // Small delay to ensure reset before animation restarts
+        container.style.transition = 'transform 0.5s ease'; 
+        container.style.transform = 'translateX(0)'; 
+      }, 10); 
     }
   
     // Auto slide function
     function autoSlide() {
-      autoSlideInterval = setInterval(moveNext, 3000); // Move next every 3 seconds
+      autoSlideInterval = setInterval(moveNext, 3000); 
     }
   
     // Start auto sliding
     autoSlide();
   
-    // Add event listeners for next and previous buttons
+    
     document.querySelector('.next-btn').addEventListener('click', () => {
-      clearInterval(autoSlideInterval); // Stop auto-slide when button clicked
+      clearInterval(autoSlideInterval);
       moveNext();
-      autoSlide(); // Restart auto-slide
+      autoSlide(); 
     });
   
     document.querySelector('.prev-btn').addEventListener('click', () => {
-      clearInterval(autoSlideInterval); // Stop auto-slide when button clicked
+      clearInterval(autoSlideInterval); 
       movePrev();
-      autoSlide(); // Restart auto-slide
+      autoSlide(); 
     });
   });
   
