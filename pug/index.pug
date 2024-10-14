@@ -2,9 +2,9 @@ html
     head 
         link(rel="stylesheet" href="https://use.typekit.net/your-kit-id.css")
         link(rel="stylesheet" href="../css/main.css")
-        link(rel="stylesheet", href="../css/highlights.css")
-        link(rel="stylesheet", href="../css/gallery.css")
-        link(rel="stylesheet", href="../css/skills.css")
+        link(rel="stylesheet" href="../css/highlights.css")
+        link(rel="stylesheet" href="../css/gallery.css")
+        link(rel="stylesheet" href="../css/skills.css")
         title Hasna Portfolio 
     body 
         #background 
@@ -39,20 +39,51 @@ html
                     #heading
                         |SKILLS AND EDUCATION 
                     #skillsContainer 
-                        #skills.
-                            Languages: C, C++, JavaScript, Python
                         #Certifications 
-                            h1 first 
-                            h1 second 
-                            h1 third
+                            h1 CERTIFICATIONS
+                            .carousel
+                                button.prev-btn#cert-prev-btn &lt;
+                                .carousel-container#cert-carousel-container
+                                    .carousel-item
+                                        img(src="/images/Hackademia/1.jpg" alt="Logo 1")
+                                    .carousel-item
+                                        img(src="/images/Hackademia/2.jpg" alt="Logo 2")
+                                    .carousel-item
+                                        img(src="/images/Hackademia/3.jpg" alt="Logo 3")
+                                    .carousel-item
+                                        img(src="/images/Hackademia/4.jpg" alt="Logo 4")
+                                    .carousel-item
+                                        img(src="/images/Hackademia/5.JPG" alt="Logo 5")
+                                    .carousel-item
+                                        img(src="/images/Hackademia/6.JPG" alt="Logo 6")
+                                    .carousel-item
+                                        img(src="/images/Hackademia/7.JPG" alt="Logo 7")
+                                button.next-btn#cert-next-btn &gt;
                         #Projects 
-                            h1 first 
-                            h1 second 
-                            h1 third
-                        #Education.
-                            Bachelors: BCT at KhCE - 2022 - Ongoing   
-                            Plus Two: St.Xaviers, Maitighar -2019 - 2021
-                            Secondary School: NESS - 2019
+                            h1 PROJECTS 
+                            .carousel
+                                button.prev-btn#proj-prev-btn &lt;
+                                .carousel-container#proj-carousel-container
+                                    .carousel-item
+                                        img(src="/images/Hackademia/1.jpg" alt="Logo 1")
+                                    .carousel-item
+                                        img(src="/images/Hackademia/2.jpg" alt="Logo 2")
+                                    .carousel-item
+                                        img(src="/images/Hackademia/3.jpg" alt="Logo 3")
+                                    .carousel-item
+                                        img(src="/images/Hackademia/4.jpg" alt="Logo 4")
+                                    .carousel-item
+                                        img(src="/images/Hackademia/5.JPG" alt="Logo 5")
+                                    .carousel-item
+                                        img(src="/images/Hackademia/6.JPG" alt="Logo 6")
+                                    .carousel-item
+                                        img(src="/images/Hackademia/7.JPG" alt="Logo 7")
+                                button.next-btn#proj-next-btn &gt;
+                        #Education
+                            h1
+                                |Bachelors: BCT at KhCE - 2022 - Ongoing   
+                                |Plus Two: St.Xaviers, Maitighar -2019 - 2021
+                                |Secondary School: NESS - 2019
             section    
                 #galleryContents 
                     #heading 
@@ -95,3 +126,4 @@ html
                     a(href="./index.html#indexContents") Go To Top 
     script(src="/js/highlights.js")
     script(src="/js/main.js")
+    script(src="/js/skills.js")
