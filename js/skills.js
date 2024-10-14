@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const container = document.querySelector(containerSelector);
         const items = container.querySelectorAll(".carousel-item");
         let itemWidth = items[0].offsetWidth + 10;
-        let visibleItems = 4;
+        let visibleItems = 1;
         let totalItems = items.length;
         let moveAmount = itemWidth * visibleItems;
         let autoSlideInterval;
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Auto slide function
         function autoSlide() {
-            autoSlideInterval = setInterval(moveNext, 3000);
+            autoSlideInterval = setInterval(moveNext, 4000);
         }
 
         // Start auto sliding
