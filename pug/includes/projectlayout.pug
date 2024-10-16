@@ -1,0 +1,8 @@
+mixin layout(name, href, languages)
+    .layout-container
+        .logo 
+            img(src="/images/github.png", alt="")
+        .projectName= name 
+        .languagesUsed
+            h1= languages
+        a(href=href) Check Github
