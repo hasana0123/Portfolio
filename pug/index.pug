@@ -65,19 +65,20 @@ html
                                 button.prev-btn#proj-prev-btn &lt;
                                 .carousel-container#proj-carousel-container
                                     .carousel-item
-                                        img(src="/images/Hackademia/1.jpg" alt="Logo 1")
+                                        include includes/projectlayout
+                                        +layout("Calculator","https://github.com/hasana0123/Calculator", "A digital recreation of a Casio calculator using PugJS, CSS, and JavaScript.") 
                                     .carousel-item
-                                        img(src="/images/Hackademia/2.jpg" alt="Logo 2")
+                                        include includes/projectlayout
+                                        +layout("Alfa-Sway","https://github.com/hasana0123/Alfa-Sway","Hangman game built in C++ using SFML for graphics and user interaction.") 
                                     .carousel-item
-                                        img(src="/images/Hackademia/3.jpg" alt="Logo 3")
+                                        include includes/projectlayout
+                                        +layout("Tic-tac-toe","https://github.com/hasana0123/Python","A console-based implementation of human v/s computer Tic-Tac-Toe game using basic Python") 
                                     .carousel-item
-                                        img(src="/images/Hackademia/4.jpg" alt="Logo 4")
+                                        include includes/projectlayout
+                                        +layout("Image-Classifier","https://github.com/hasana0123/Image-Classifier","An image classifier built with TensorFlow and Keras, using CNN for multi-class classification.") 
                                     .carousel-item
-                                        img(src="/images/Hackademia/5.JPG" alt="Logo 5")
-                                    .carousel-item
-                                        img(src="/images/Hackademia/6.JPG" alt="Logo 6")
-                                    .carousel-item
-                                        img(src="/images/Hackademia/7.JPG" alt="Logo 7")
+                                        include includes/projectlayout
+                                        +layout("Bichaar","https://github.com/hasana0123/Bichaar","A demo website for thriftshop built using PugJS, SASS and JavaScript") 
                                 button.next-btn#proj-next-btn &gt;
                         #Education
                             h1
@@ -85,15 +86,7 @@ html
                                 |Plus Two: St.Xaviers, Maitighar -2019 - 2021
                                 |Secondary School: NESS - 2019
 
-                            #projectss 
-                                button.prev-btn  &lt;                             
-                                include includes/projectlayout
-                                +layout("Name1","https://github.com/hasana0123/Portfolio","pugjs, css, Javascript") 
-                                include includes/projectlayout
-                                +layout("Name2","https://github.com/hasana0123/Portfolio","pugjs, css, Javascript") 
-                                include includes/projectlayout
-                                +layout("Name3","https://github.com/hasana0123/Portfolio","pugjs, css, Javascript") 
-                                button.next-btn &gt;
+
             section    
                 #galleryContents 
                     #heading 
