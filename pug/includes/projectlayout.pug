@@ -1,8 +1,8 @@
-mixin layout(name, href, languages)
+mixin layout(name, href, description)
     .layout-container
-        .logo 
-            img(src="/images/github.png", alt="")
-        .projectName= name 
-        .languagesUsed
-            h1= languages
-        a(href=href) Check Github
+        a(href=href)
+            .logo 
+                img(src="/images/github.png", alt="")
+            .projectName= name 
+            .description
+                h1= description  
