@@ -3,12 +3,12 @@
     flex-direction: column;
     align-items: center;
     margin-top: 200px;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     /* transition: 2s cubic-bezier(0.075, 0.82, 0.165, 1); */
 }
 
 #skillsContents #skillsContainer {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     padding: 50px;
     width: 70%;
     background-color: #f9f9f97a;
@@ -20,8 +20,15 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+    /* border: 2px solid rgb(255, 0, 0); */
 }
-
+#Projects .head, #Certifications .head{
+    font-size: 40px;
+    color: rgb(73, 66, 56);
+    padding: 40px;
+    text-decoration: underline;
+    font-weight: bold;
+}
 .carousel {
     position: relative;
     width: 80%;
@@ -33,16 +40,33 @@
     align-items: center;
     justify-content: center;
 }
-
-.carousel-container {
+#Certifications .carousel-container
+{
     display: flex;
     transition: transform 0.5s ease;
-    /* border: 2px solid yellow; */
     width: calc(300px * 4);
+    /* border: 2px solid yellow; */
+}
+#Projects .carousel-container {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: calc(300px * 4);
+    /* border: 2px solid yellow; */
     min-height: 30vh; /* Adjust for the total number of items */
 }
 
-.carousel-item {
+#Certifications .carousel-item {
+    min-width: 400px; /* Width of each item */
+    margin-right: 10px;
+    min-height: 30vh;
+    /* border: 2px solid rgb(255, 0, 0); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#Projects .carousel-item {
     min-width: 300px; /* Width of each item */
     margin-right: 10px;
     min-height: 30vh;
@@ -52,11 +76,50 @@
     align-items: center;
 }
 
-.carousel-item img {
+#Certifications .carousel-item img {
+    max-width: 95%;
+    max-height: 100%;
+    object-fit: contain;
+    filter: brightness(0.8);
+    transition: 0.3s ease-in-out;
+    border: 5px solid rgb(243, 239, 19);
+    box-shadow: 1px 2px 10px 1px black;
+}
+.carousel-item img:hover {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
+    filter: brightness(1);
+    transform: scale(0.9);
+    
 }
+
+#Certifications #viewAllButton
+{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+#Certifications #viewAllButton a{
+    font-size: 25px;
+    border-top: 2px solid wheat;
+    border-bottom: 2px solid wheat;
+    text-decoration: none;
+    background-color: rgb(17, 128, 44);
+    padding: 10px;
+    color: bisque;
+    transition: 0.3s ease-in-out;
+}
+
+#Certifications #viewAllButton a:hover
+{
+    color:  rgb(230, 148, 24);
+    background-color: rgba(0, 0, 0, 0.997);
+    box-shadow: 0px 1px 10px 1px black;
+    box-sizing: border-box;
+    font-size: 27px;
+}
+
+
 
 /* Navigation buttons */
 button {
@@ -69,6 +132,17 @@ button {
     cursor: pointer;
     font-size: 24px;
     z-index: 1;
+    transition: 0.2s ease-in-out;
+    height: 25%;
+}
+
+button:hover
+{
+    /* background-color: rgb(90, 175, 232);
+     */
+     box-shadow: 0px 1px 5px 1px black;
+     /* transform: scale(1.1); */
+     height: 50%;
 }
 
 .prev-btn {
@@ -104,7 +178,7 @@ button {
     background-color: #f9f9f97e;
     box-shadow: 0px 2px 10px 2px rgb(49, 48, 48);
     transform: scale(1.05);
-    transition: 0.3s ease-in-out;
+    transition: 0.4s ease-in-out;
   }
   
   .layout-container a {
